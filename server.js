@@ -21,7 +21,6 @@ const username = process.env.DB_USERNAME
 const password = process.env.DB_PASSWORD
 const cluster = process.env.DB_CLUSTER
 const database = process.env.DB_DATABASE
-console.log(process.env);
 const mongoDBUrl = `mongodb+srv://${username}:${password}@${cluster}/${database}?retryWrites=true&w=majority`
 mongoose.connect(mongoDBUrl, {
   useNewUrlParser: true,
